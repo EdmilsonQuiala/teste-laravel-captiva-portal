@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexão Bem-sucedida</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
-        }
-        .success-container {
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .success-icon {
-            font-size: 80px;
-            color: #28a745;
-            margin-bottom: 20px;
-        }
-        .success-title {
-            color: #28a745;
-            margin-bottom: 15px;
-        }
-        .success-message {
-            margin-bottom: 30px;
-            color: #333;
-        }
-        .btn-continue {
-            background-color: #28a745;
-            border-color: #28a745;
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        .btn-continue:hover {
-            background-color: #218838;
-            border-color: #1e7e34;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexão Bem-sucedida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #198754, #20c997);
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .success-box {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .success-icon {
+      font-size: 70px;
+      color: #198754;
+      margin-bottom: 20px;
+    }
+    .success-title {
+      font-weight: 600;
+      color: #198754;
+      margin-bottom: 15px;
+    }
+    .success-message {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+    .btn-continue {
+      background-color: #198754;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: 500;
+      width: 100%;
+    }
+    .btn-continue:hover {
+      background-color: #157347;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="success-container">
-            <div class="success-icon">✓</div>
-            <h2 class="success-title">Conexão Bem-sucedida!</h2>
-            <p class="success-message">Você está conectado à internet. Aproveite sua navegação!</p>
-            <a href="https://www.google.com" class="btn btn-continue">Começar a Navegar</a>
-        </div>
-    </div>
+  <div class="success-box">
+    <div class="success-icon">✓</div>
+    <h2 class="success-title">Conexão Bem-sucedida!</h2>
+    <p class="success-message">Você já está conectado à internet. Boa navegação!</p>
+    <a href="https://www.google.com" class="btn btn-continue">Começar a Navegar</a>
+  </div>
 
-     <script>
+  <script>
+    // Redireciona automaticamente após 2s para seu site
     setTimeout(() => {
-        window.location.href = 'http://neverssl.com';
-    }, 500);
-    </script>
+      window.location.href = 'http://quialacorps.com';
+    }, 2000);
+  </script>
 </body>
 </html>

@@ -43,7 +43,7 @@ class CaptiveController extends Controller
 
         // Mensagem curta para CNA + link para testar navegação
         return response(
-            "<h3>Acesso liberado para {$clientIp}</h3>"."<p>Você já pode navegar. Abra <a href=''>example.com</a> ou <a href=''>neverssl.com</a>.</p>"
+            "<h3>Acesso liberado para {$clientIp}</h3>"."<p>Você já pode navegar. Abra <a href=''>quialacorps.com</a> ou <a href=''>google.com</a>.</p>"
         );
     }
     
