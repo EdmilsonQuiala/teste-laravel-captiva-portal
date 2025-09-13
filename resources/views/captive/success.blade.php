@@ -54,5 +54,11 @@
             <a href="https://www.google.com" class="btn btn-continue">Começar a Navegar</a>
         </div>
     </div>
+
+     <script>
+    setTimeout(() => {
+        window.location.href = 'http://neverssl.com';
+    }, 500);
+    </script>
 </body>
 </html>

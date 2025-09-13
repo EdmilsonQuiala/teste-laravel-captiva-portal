@@ -62,10 +62,6 @@ class CaptivePortalController extends Controller
      */
     private function getMacAddress($ipAddress)
     {
-        // Em um ambiente de produção, você precisaria implementar uma lógica
-        // para obter o endereço MAC real do dispositivo, possivelmente consultando
-        // a tabela ARP do sistema ou integrando com equipamentos de rede
-        
         // Para fins de demonstração, retornamos um valor simulado
         return 'AA:BB:CC:DD:EE:FF';
     }
@@ -74,15 +70,10 @@ class CaptivePortalController extends Controller
      * Libera o acesso à internet para o dispositivo
      */
     private function authorizeDevice($ipAddress, $macAddress)
-    {
-        // Em um ambiente de produção, você precisaria implementar a integração
-        // com o firewall ou equipamento de rede para liberar o acesso
-        // Isso pode envolver chamadas API para um controlador de rede,
-        // modificação de regras de firewall, etc.
-        
+    {   
         Log::info("Acesso liberado para IP: {$ipAddress}, MAC: {$macAddress}");
         
-        // Para fins de demonstração, apenas registramos a ação
+        // Para fins de demonstração, apenas registo a ação
         return true;
     }
 }
